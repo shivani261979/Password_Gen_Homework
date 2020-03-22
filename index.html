@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Password Generator</title>
+    <link rel="stylesheet" type= "style.css" href="password.css">
+    
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="title"> Secure Password Generator </h2>
+        <div class="result">
+            <div class = "field-title"> Generated Password</div>
+            <div class = "result-viewbox" id="result"> Generate Password</div>
+        </div>
+
+        <div class="range-slider" data-min="6" data-max="32">
+            <div class="length-title field-title" data-length="0"> length:</div>
+            <input type="range" min="6" max="32" value="16" id="slider">
+        </div>
+        <div class= "settings">
+            
+            <div class= "setting">
+                <input type="checkbox" id="uppercase" checked>          
+                <label for= "uppercase" > Include Uppercase </label>
+        </div>
+        <div class= "settings">
+            
+            <div class= "setting">
+                <input type="checkbox" id="lowercase" checked>
+                <label for= "lowercase" > Include Lowercase </label>
+            </div>
+        </div>
+        <div class= "settings">
+            <div class= "setting">
+                <input type="checkbox" id="number" checked>
+                <label for= "number" > Include Number </label>
+            </div>
+        </div>
+        <div class= "settings">
+            <div class= "setting">
+                <input type="checkbox" id="symbol" checked>           
+                <label for= "symbol" > Include Symbol </label>
+            </div>
+        </div>
+
+        <button class="generate" id="generate"> Generate Password </button>
+    </div>
+    <div class="footer">
+        <p>copyright @ Shivani LLC</p>
+    </div>
+    
+    <script type= "text/javascript" src="./password.js"></script> 
+
+</body>
+</html>
