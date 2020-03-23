@@ -113,11 +113,11 @@ generateBtn.addEventListener("click", () => {
 //Function to generate password and returning it
 function generatePassword(length, lower, upper, number, symbol){
   let generatedPassword = ""; 
-  const typesCount = length + lower + upper + number + symbol; 
+  const typesCount = lower + upper + number + symbol; 
   const typesArr = [ { lower }, { upper } , { number } , { symbol } ].filter(item => Object.values(item)[0]); 
-  console.log("in generate password");
+  console.log("in generate password. typesCount holds: ", typesCount);
   if (typesCount === 0) {
-    return; 
+    return "Select atleast one character type"; 
   }
 
   for (let i = 0; i < length; i++){
